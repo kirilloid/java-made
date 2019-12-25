@@ -6,7 +6,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TradeReader {
-    private BufferedReader reader;
     private Pattern typeRe;
     private Pattern priceRe;
 
@@ -15,53 +14,50 @@ public class TradeReader {
         priceRe = Pattern.compile("\"price\": (\\d+)");
     }
 
-    public Trade read(BufferedReader reader) throws IllegalStateException {
-        this.reader = reader;
-        TradeType tp;
-        int price;
-
+    public Trade read(BufferedReader reader, ITradeTypeReader ttReader) throws IllegalStateException {
         try {
-            readFirstLine();
-            tp = readTradeType();
-            price = readPrice();
-            readLastLine();
+            readFirstLine(reader);
+            TradeType tp = readTradeType(reader, ttReader);
+            int price = readPrice(reader);
+            readLastLine(reader);
 
-            Trade trade = new Trade(tp, price);
-            return trade;
+            return new Trade(tp, price);
         } catch (Exception e) {
             throw new IllegalStateException(e.getMessage());
         }
     }
 
-    protected void readFirstLine() throws IOException {
-        String s = reader.readLine();
-        assert("Trade: {".equals(s));
+    private void readFirstLine(BufferedReader reader) throws IOException {
+        String str = reader.readLine();
+        if (!"Trade: {".equals(str)) {
+            throw new IllegalStateException("First line of file is incorrect");
+        }
     }
 
-    protected TradeType readTradeType() throws IOException {
+    private TradeType readTradeType(BufferedReader reader, ITradeTypeReader ttReader) throws IOException {
         String str = reader.readLine();
         Matcher matcher = typeRe.matcher(str);
         if (!matcher.find()) {
             throw new IllegalStateException("cannot read TradeType");
         }
         String tpStr = matcher.group(1);
-        TradeType tp = TradeType.valueOf(tpStr);
-        return tp;
+        return ttReader.read(tpStr);
     }
 
-    protected int readPrice() throws IOException {
+    public int readPrice(BufferedReader reader) throws IOException {
         String str = reader.readLine();
         Matcher matcher = priceRe.matcher(str);
         if (!matcher.find()) {
             throw new IllegalStateException("cannot read price");
         }
         String tpStr = matcher.group(1);
-        int price = Integer.parseInt(tpStr);
-        return price;
+        return Integer.parseInt(tpStr);
     }
 
-    protected void readLastLine() throws IOException {
+    private void readLastLine(BufferedReader reader) throws IOException {
         String str = reader.readLine();
-        assert("}".equals(str));
+        if (!"}".equals(str)) {
+            throw new IllegalStateException("Last line of file is incorrect");
+        }
     }
 }
