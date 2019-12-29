@@ -15,7 +15,7 @@ public class Main {
         String fileName = args[0];
         ITradeTypeReader reader = new TradeTypeValueReader();
         try {
-            Trade tr = read(fileName, reader);
+            ITrade tr = read(fileName, reader);
             if (tr != null) {
                 System.out.println(tr.toString());
             }
@@ -24,7 +24,7 @@ public class Main {
         }
     }
 
-    public static Trade read(String fileName, ITradeTypeReader ttReader) throws IOException {
+    public static ITrade read(String fileName, ITradeTypeReader ttReader) throws IOException {
         try (
             BufferedReader reader = new BufferedReader(new FileReader(fileName))
         ) {

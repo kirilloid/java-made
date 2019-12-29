@@ -1,6 +1,6 @@
 package ru.mail;
 
-public class Trade {
+public class Trade implements ITrade {
     private final TradeType tp;
     private final int price;
 

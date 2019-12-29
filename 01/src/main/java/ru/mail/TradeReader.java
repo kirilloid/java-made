@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class TradeReader {
+public class TradeReader implements ITradeReader {
     private Pattern typeRe;
     private Pattern priceRe;
 
@@ -14,14 +14,18 @@ public class TradeReader {
         priceRe = Pattern.compile("\"price\": (\\d+)");
     }
 
-    public Trade read(BufferedReader reader, ITradeTypeReader ttReader) throws IllegalStateException {
+    protected ITrade tradeCreator(TradeType tp, int price) {
+        return new Trade(tp, price);
+    }
+
+    public ITrade read(BufferedReader reader, ITradeTypeReader ttReader) throws IllegalStateException {
         try {
             readFirstLine(reader);
             TradeType tp = readTradeType(reader, ttReader);
             int price = readPrice(reader);
             readLastLine(reader);
 
-            return new Trade(tp, price);
+            return tradeCreator(tp, price);
         } catch (Exception e) {
             throw new IllegalStateException(e.getMessage());
         }
