@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="75155a9b-aaf9-4cd1-980e-eb5f5f38a868" name="Default Changelist" comment="PR #1 comments">
+      <change afterPath="$PROJECT_DIR$/../02/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/.idea/02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03/src/test/java/SerializeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mail/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mail/ContextImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mail/ExecutionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mail/ExecutionManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mail/ExecutionStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mail/ExecutionStatisticsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mail/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ExecutionTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="457" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="untitled" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="PR #1 comments" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\dev\made\java\kk\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SyvhjNliJFtgUC4B0DziGq1MVq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="ru.mail" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.mail" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\made\java\04\src\main\java" />
+      <recent name="D:\dev\made\java\04\src" />
+      <recent name="D:\dev\made\java\04" />
+      <recent name="D:\dev\made\java\04\src\main" />
+      <recent name="E:\dev\made\java\kk\src\test\java" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value=" " />
+      <command value="public " />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ExecutionTest&quot; --stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75155a9b-aaf9-4cd1-980e-eb5f5f38a868" name="Default Changelist" comment="" />
+      <created>1572548770799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572548770799</updated>
+    </task>
+    <task id="LOCAL-00001" summary="PR #1 comments">
+      <created>1577299619106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577299619106</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="PR #1 comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="PR #1 comments" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="829" y="352" key="#Project_Structure" timestamp="1577478286208">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="829" y="352" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1577478286208" />
+    <state x="939" y="330" key="#Test" timestamp="1577385806582">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="939" y="330" key="#Test/0.0.2560.1400@0.0.2560.1400" timestamp="1577385806582" />
+    <state x="939" y="330" key="#TradeTest" timestamp="1577384816985">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="939" y="330" key="#TradeTest/0.0.2560.1400@0.0.2560.1400" timestamp="1577384816985" />
+    <state x="691" y="348" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577728580416">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="691" y="348" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577728580416" />
+    <state x="92" y="92" width="2376" height="1216" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1577531344114">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="92" y="92" width="2376" height="1216" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577531344114" />
+    <state x="1041" y="340" key="#com.intellij.ide.util.MemberChooser" timestamp="1577479692357">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1041" y="340" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1577479692357" />
+    <state x="1102" y="585" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577728114615">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1102" y="585" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577728114615" />
+    <state x="978" y="338" key="#xdebugger.evaluate" timestamp="1577387763079">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="978" y="338" key="#xdebugger.evaluate/0.0.2560.1400@0.0.2560.1400" timestamp="1577387763079" />
+    <state x="849" y="227" key="CommitChangelistDialog2" timestamp="1577478259764">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="849" y="227" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1577478259764" />
+    <state width="444" height="582" key="DebuggerActiveHint" timestamp="1577387554234">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="444" height="582" key="DebuggerActiveHint/0.0.2560.1400@0.0.2560.1400" timestamp="1577387554234" />
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1577299533866">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577299533866" />
+    <state x="1017" y="448" key="FileChooserDialogImpl" timestamp="1577300080053">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1017" y="448" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1577300080053" />
+    <state width="2533" height="479" key="GridCell.Tab.0.bottom" timestamp="1577730377845">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2533" height="479" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1577730377845" />
+    <state width="2533" height="479" key="GridCell.Tab.0.center" timestamp="1577730377844">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2533" height="479" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1577730377844" />
+    <state width="2533" height="479" key="GridCell.Tab.0.left" timestamp="1577730377844">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2533" height="479" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1577730377844" />
+    <state width="2533" height="479" key="GridCell.Tab.0.right" timestamp="1577730377844">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2533" height="479" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1577730377844" />
+    <state width="2505" height="475" key="GridCell.Tab.1.bottom" timestamp="1577387777253">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="475" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1577387777253" />
+    <state width="2505" height="475" key="GridCell.Tab.1.center" timestamp="1577387777253">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="475" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1577387777253" />
+    <state width="2505" height="475" key="GridCell.Tab.1.left" timestamp="1577387777253">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="475" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1577387777253" />
+    <state width="2505" height="475" key="GridCell.Tab.1.right" timestamp="1577387777253">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="475" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1577387777253" />
+    <state x="760" y="386" key="IDE.errors.dialog" timestamp="1577385491717">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="760" y="386" key="IDE.errors.dialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577385491717" />
+    <state x="738" y="336" key="SettingsEditor" timestamp="1577299386096">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="738" y="336" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1577299386096" />
+    <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577299270455">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577299270455" />
+    <state x="899" y="232" width="762" height="936" key="find.popup" timestamp="1577730136058">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="899" y="232" width="762" height="936" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1577730136058" />
+    <state x="963" y="485" key="git4idea.merge.GitPullDialog" timestamp="1577298705787">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="963" y="485" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577298705787" />
+    <state x="550" y="218" key="new project wizard" timestamp="1577300088826">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="550" y="218" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1577300088826" />
+    <state x="986" y="320" key="refactoring.ChangeSignatureDialog" timestamp="1577298056310">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="986" y="320" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1577298056310" />
+    <state x="893" y="329" width="840" height="1034" key="run.anything.popup" timestamp="1577729118963">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="893" y="329" width="840" height="1034" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1577729118963" />
+    <state x="943" y="419" width="840" height="678" key="search.everywhere.popup" timestamp="1577730188017">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="419" width="840" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1577730188017" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MADE_Advanced_Java__2$test.ic" NAME="test Coverage Results" MODIFIED="1577387810897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
