@@ -1,7 +1,12 @@
 package ru.mail;
 
-public class TradeTypeCaseReader implements ITradeTypeReader {
-   public TradeType read(String str) {
+public class CaseTradeReader extends BaseTradeReader {
+   protected ITrade tradeFactory(String tradeType, int price) {
+      TradeType tt = readTradeType(tradeType);
+      return new Trade(tt, price);
+   }
+   
+   private TradeType readTradeType(String str) {
       switch (str) {
          case "BOND":
             return TradeType.BOND;

@@ -13,9 +13,8 @@ public class Main {
             throw new IllegalArgumentException("No trade type reader provided");
         }
         String fileName = args[0];
-        ITradeTypeReader reader = new TradeTypeValueReader();
         try {
-            ITrade tr = read(fileName, reader);
+            ITrade tr = read(fileName);
             if (tr != null) {
                 System.out.println(tr.toString());
             }
@@ -24,12 +23,12 @@ public class Main {
         }
     }
 
-    public static ITrade read(String fileName, ITradeTypeReader ttReader) throws IOException {
+    public static ITrade read(String fileName) throws IOException {
         try (
             BufferedReader reader = new BufferedReader(new FileReader(fileName))
         ) {
-            TradeReader tr = new TradeReader();
-            return tr.read(reader, ttReader);
+            ITradeReader tr = new EnumTradeReader();
+            return tr.read(reader);
         }
     }
 }

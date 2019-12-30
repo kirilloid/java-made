@@ -5,27 +5,25 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class TradeReader implements ITradeReader {
-    private Pattern typeRe;
-    private Pattern priceRe;
+public abstract class BaseTradeReader implements ITradeReader {
+    private final Pattern typeRe;
+    private final Pattern priceRe;
 
-    public TradeReader() {
+    public BaseTradeReader() {
         typeRe = Pattern.compile("\"type\": (\\w+),");
         priceRe = Pattern.compile("\"price\": (\\d+)");
     }
 
-    protected ITrade tradeCreator(TradeType tp, int price) {
-        return new Trade(tp, price);
-    }
+    abstract protected ITrade tradeFactory(String tradeType, int price);
 
-    public ITrade read(BufferedReader reader, ITradeTypeReader ttReader) throws IllegalStateException {
+    public ITrade read(BufferedReader reader) {
         try {
             readFirstLine(reader);
-            TradeType tp = readTradeType(reader, ttReader);
+            String tradeType = readTradeType(reader);
             int price = readPrice(reader);
             readLastLine(reader);
 
-            return tradeCreator(tp, price);
+            return tradeFactory(tradeType, price);
         } catch (Exception e) {
             throw new IllegalStateException(e.getMessage());
         }
@@ -38,14 +36,13 @@ public class TradeReader implements ITradeReader {
         }
     }
 
-    private TradeType readTradeType(BufferedReader reader, ITradeTypeReader ttReader) throws IOException {
+    private String readTradeType(BufferedReader reader) throws IOException {
         String str = reader.readLine();
         Matcher matcher = typeRe.matcher(str);
         if (!matcher.find()) {
             throw new IllegalStateException("cannot read TradeType");
         }
-        String tpStr = matcher.group(1);
-        return ttReader.read(tpStr);
+        return matcher.group(1);
     }
 
     public int readPrice(BufferedReader reader) throws IOException {
