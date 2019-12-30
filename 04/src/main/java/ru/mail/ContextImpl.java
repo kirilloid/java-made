@@ -106,11 +106,7 @@ public class ContextImpl implements Context {
     }
 
     public boolean isFinished() {
-        boolean value;
-        synchronized(barrier) {
-            value = (completed + failed + interrupted == total);
-        }
-        return value;
+        return completed + failed + interrupted == total;
     }
 
     public void onFinish(Runnable callback) {
@@ -130,7 +126,9 @@ public class ContextImpl implements Context {
             while (!isFinished()) {
                 try {
                     barrier.wait();
-                } catch (InterruptedException e) {}
+                } catch (InterruptedException e) {
+                    // Nothing to do here
+                }
             }
         }
     }
